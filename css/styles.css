@@ -1,0 +1,55 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'REM', sans-serif; 
+    font-size: 1rem;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(45deg, #2196f3 0%, #0d47a1 100%);
+    background-size: 200% 200%;
+    height: 100%;
+    width: 100%;
+    animation: background 6s ease infinite;
+}
+
+
+@keyframes background {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.imgAvatar{
+    width: 220px;
+    height: 240px;
+}
+
+header h1{
+    font-size: 2.1rem;
+    color: black;
+}
+
+header span{
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 60px;
+}
