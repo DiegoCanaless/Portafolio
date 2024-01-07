@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  color: black;
+}
+
 header {
   height: 100vh;
 }
@@ -141,7 +145,51 @@ font-size: 34px;
 }
 
 .tarjet{
-  border: 1px solid black;
-  width: 25vh;
-  height: 25vh;
+  width: 30vh;
+  height: 30vh;
 }
+
+
+.tituloInfo{
+  display: none;
+  font-size: 2rem;
+  margin-top: 7vh;
+}
+
+.iconInfo{
+  display: none;
+}
+
+.imgProyectos {
+  background-image: url("../assets/capturaVictoliana.jpg");
+  background-position: center center;
+  background-size: cover;
+  a:hover{
+    color: black
+  }
+  transition-duration: 10s;
+}
+
+.imgProyectos:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url("../assets/capturaVictoliana.jpg");
+  
+  .tituloInfo {
+    color: white;
+    display: block;
+  }
+  .iconInfo {
+    display: block;
+    color:white;
+  }
+  .iconTecnologia{
+    display: block;
+  }
+}
+
+.iconTecnologia{
+  width: 35px;
+  height: 35px;
+  display: none;
+}
+    
