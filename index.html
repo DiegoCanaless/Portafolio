@@ -12,12 +12,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=REM:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="d-flex flex-column align-items-center justify-content-center h-100">
+    <nav>
+        <div class="d-flex justify-content-end">
+            <button class="abrir-menu" aria-label="Abrir Menu">
+                <img class= "icono-menu" src="./assets/list.svg" alt="">
+            </button>
+        </div>
+        <ul class="d-flex menu align-items-center p-0">
+            <button class="cerrar-menu" aria-label="Cerrar Menu">
+                <img class="icono-menu" src="./assets/x-lg.svg" alt="">
+            </button>
+            <li class="acomodarMenu"><a href="" class="menuTexto">Inicio</a></li>
+            <li><a href="" class="menuTexto">Sobre Mi</a></li>
+            <li><a href="" class="menuTexto">Proyectos</a></li>>
+            <li><a href="" class="menuTexto">Contactanos</a></li>
+            <div class="Accommodate ">
+                <a href="https://github.com/DiegoCanaless"><i class="bi bi-github p-2 "></i></a>
+                <a href="https://www.linkedin.com/in/diego-canales-236332254/"><i class="bi bi-linkedin p-2"></i></a>
+            </div>
+        </ul>
+        
+    </nav>
+    <header class="d-flex flex-column align-items-center justify-content-center ">
         <img src="./assets/Redimensionado Open Peeps.png" alt="" class="imgAvatar">
         <h1 class="text-center name">Diego Canales</h1>
         <span class="description">Web Development</span>
+        <div class="Accommodate ">
+            <a href="https://github.com/DiegoCanaless"><i class="bi bi-github p-2"></i></a>
+            <a href="https://www.linkedin.com/in/diego-canales-236332254/"><i class="bi bi-linkedin p-2"></i></a>
+        </div>
+        <a href=""><i class="bi bi-arrow-down-circle iconFlecha"></i></a>
     </header>
 
+    <main>
+        <div class="contenedor">
+            <div class="contenedor2">
+                <h3 class="p-3 fs-2 fw-bold">Sobre mi.</h3>
+                <p class="p-4 fs-4">¡Hola! 👋 Soy Diego Canales, un apasionado desarrollador en constante evolución. Con conocimientos sólidos en HTML, CSS, Bootstrap, Java y Python, estoy enfocado en ser un desarrollador full stack. Actualmente, estoy inmerso en el estudio de JavaScript para ampliar mis capacidades y enfrentar nuevos retos.💻✨</p>
+            </div>
+            <a href=""><i class="bi bi-arrow-down-circle iconFlecha d-flex justify-content-center"></i></a>
+        </div>
+        <div class="contenedor">
+            <h3 class="text-center titulo fw-semibold">Proyectos</h3>
+            <div class="container d-flex flex-column align-items-center mt-5 gap-5">
+                <div class="tarjet">
+                </div>
+                <div class="tarjet">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script defer src="./js/menu.js"></script>
     <script href="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
