@@ -40,9 +40,10 @@ header {
   background-color: #ffffff;
 	overflow: auto;
   opacity: 0;
-
   pointer-events: none;
   transition: opacity 0.2s;
+
+  
 }
 
 .menu a {
@@ -131,7 +132,7 @@ div i {
 
 .contenedor2{
   padding-top: 10vh;
-  margin-bottom: 155px;
+  margin-bottom: 175px;
 }
 
 .bi-github,
@@ -193,3 +194,97 @@ font-size: 34px;
   display: none;
 }
     
+.iconFlechaProyecto{
+  font-size: 3rem;
+  margin-top: 240px;
+}
+
+.contactoCorreo{
+  height: 35px;
+  border-radius: 12px;
+  border: 2px solid black;
+  color: black;
+}
+
+.mensaje{
+  border-radius: 8px;
+  border: 0.1px solid black;
+  color: black;
+  height: 30vh;
+  padding-top: 5px;
+}
+
+.btnEnviar {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: white;
+  border: 0.08em solid black;
+  border-radius: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btnEnviar span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: white;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: black;
+  border: 0.08em solid black;
+  box-shadow: 0 0.4em 0.1em 0.019em black;
+}
+
+.btnEnviar span:hover {
+  transition: all 0.2s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 black;
+}
+
+.btnEnviar button span:not(hover) {
+  transition: all 1s;
+}
+
+.input {
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+  
+}
+
+.input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+.input:focus {
+  border: 2px solid var(--input-focus);
+}
+
+.copyright{
+  margin-top: 50%;
+}
+
+.menu-abierto .ocultar-botones {
+  display: none;
+}
+
