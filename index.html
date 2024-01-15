@@ -41,21 +41,21 @@
             <a href="https://github.com/DiegoCanaless"><i class="bi bi-github p-2"></i></a>
             <a href="https://www.linkedin.com/in/diego-canales-236332254/"><i class="bi bi-linkedin p-2"></i></a>
         </div>
-        <a href="#sobreMi"><i class="bi bi-arrow-down-circle iconFlecha"></i></a>
+        <a href="#sobreMi"><i class="bi bi-arrow-down-circle boton-flecha"></i></a>
     </header>
 
     <main>
         <div class="contenedor">
-            <div class="contenedor2">
-                <h3 class="p-3 fs-2 fw-bold mt-4" id="sobreMi">Sobre mi.</h3>
-                <p class="p-4 fs-4">¡Hola! 👋 Soy Diego Canales, un apasionado desarrollador en constante evolución. Con conocimientos sólidos en HTML, CSS, Bootstrap, Java y Python, estoy enfocado en ser un desarrollador full stack. Actualmente, estoy inmerso en el estudio de JavaScript para ampliar mis capacidades y enfrentar nuevos retos.💻✨</p>
+            <h3 class="p-3 fs-2 fw-bold pt-4" id="sobreMi">Sobre mi.</h3>
+            <div class="textoSobreMi">
+                <p class="p-4 fs-4 ">¡Hola! 👋 Soy Diego Canales, un apasionado desarrollador en constante evolución. Con conocimientos sólidos en HTML, CSS, Bootstrap, Java y Python, estoy enfocado en ser un desarrollador full stack. Actualmente, estoy inmerso en el estudio de JavaScript para ampliar mis capacidades y enfrentar nuevos retos.💻✨</p>
             </div>
-            <a href="#proyectos"><i class="bi bi-arrow-down-circle iconFlecha d-flex justify-content-center pt-4"></i></a>
+                <a href="#proyectos"><i class="bi bi-arrow-down-circle boton-flecha d-flex justify-content-center"></i></a>
         </div>
         <div class="contenedor">
             <h3 class="text-center titulo fw-semibold mt-5" id="proyectos">Proyectos</h3>
             <a href="https://victoliana.netlify.app/" target="_blank">
-                <div class="container d-flex flex-column align-items-center gap-5 mb-5">
+                <div class="container d-flex flex-column align-items-center gap-5 tarjeta">
                     <div class="tarjet imgProyectos shadow bg-body rounded">
                         <div class="infoProyecto d-flex flex-column align-items-center">
                             <span class="tituloInfo">Victoliana</span>
@@ -69,17 +69,17 @@
                     </div>
                 </div>
             </a>
-            <a href="#contacto"><i class="bi bi-arrow-down-circle iconFlechaProyecto d-flex justify-content-center"></i></a>
+            <a href="#contacto"><i class="bi bi-arrow-down-circle boton-flecha d-flex justify-content-center"></i></a>
         </div>
     </main>
     <footer class="contenedor text-center">
-        <h3 id="contacto" class="titulo fw-semibold mb-5 pt-5">Contacto</h3>
-        <input type="email" placeholder=" Correo... " name="text" class="input">
-
-        <textarea placeholder="Escribe tu mensaje..." name="message" class="input mensaje mb-5 mt-3" style="width: 35vh; height: 35vh;"></textarea>
-
-        <div class="contenedor-boton-enviar ocultar-botones">
-            <button class="btnEnviar"><span> Enviar </span></button>
+        <h3 class="titulo fw-semibold mb-5 pt-5">Contacto</h3>
+        <div class="d-flex flex-column align-items-center">
+            <input type="email" placeholder=" Correo... " name="text" class="input" id="contacto">
+            <textarea placeholder="Escribe tu mensaje..." name="message" class="input mensaje mb-5 mt-3" style="width: 30vh; height: 35vh;"></textarea>
+            <div class="contenedor-boton-enviar ocultar-botones">
+                <button class="btnEnviar"><span> Enviar </span></button>
+            </div>
         </div>
         
         <p class="copyright text-start">&#169;Copyright 2024  Diego Canales</p>
