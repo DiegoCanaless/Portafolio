@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=REM:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="d-flex justify-content-end">
-            <button class="abrir-menu" aria-label="Abrir Menu">
+    <nav class="h-25">
+        <div class="encabezado">
+            <h1>Diego.dev</h1>
+            <button class="abrir-menu " aria-label="Abrir Menu">
                 <img class= "icono-menu" src="./assets/list.svg" alt="">
             </button>
         </div>
@@ -22,68 +24,116 @@
             <button class="cerrar-menu" aria-label="Cerrar Menu">
                 <img class="icono-menu" src="./assets/x-lg.svg" alt="">
             </button>
-            <li class="acomodarMenu"><a href="" class="menuTexto">Inicio</a></li>
             <li><a href="#sobreMi" class="menuTexto">Sobre Mi</a></li>
-            <li><a href="#proyectos" class="menuTexto">Proyectos</a></li>>
+            <li><a href="#proyectos" class="menuTexto">Proyectos</a></li>
             <li><a href="#contacto" class="menuTexto">Contactanos</a></li>
             <div class="Accommodate ">
                 <a href="https://github.com/DiegoCanaless"><i class="bi bi-github p-2 "></i></a>
                 <a href="https://www.linkedin.com/in/diego-canales-236332254/"><i class="bi bi-linkedin p-2"></i></a>
             </div>
         </ul>
-        
     </nav>
-    <header class="d-flex flex-column align-items-center justify-content-center ">
-        <img src="./assets/Redimensionado Open Peeps.png" alt="" class="imgAvatar">
-        <h1 class="text-center name">Diego Canales</h1>
-        <span class="description">Web Development</span>
-        <div class="Accommodate ">
-            <a href="https://github.com/DiegoCanaless"><i class="bi bi-github p-2"></i></a>
-            <a href="https://www.linkedin.com/in/diego-canales-236332254/"><i class="bi bi-linkedin p-2"></i></a>
-        </div>
-        <a href="#sobreMi"><i class="bi bi-arrow-down-circle boton-flecha"></i></a>
-    </header>
-
     <main>
-        <div class="contenedor">
-            <h3 class="p-3 fs-2 fw-bold pt-4" id="sobreMi">Sobre mi.</h3>
-            <div class="textoSobreMi">
-                <p class="p-4 fs-4 ">¡Hola! 👋 Soy Diego Canales, un apasionado desarrollador en constante evolución. Con conocimientos sólidos en HTML, CSS, Bootstrap, Java y Python, estoy enfocado en ser un desarrollador full stack. Actualmente, estoy inmerso en el estudio de JavaScript para ampliar mis capacidades y enfrentar nuevos retos.💻✨</p>
+        <section class="d-flex flex-column align-items-center h-75">
+            <img src="./assets/Redimensionado Open Peeps.png" alt="" class="imgAvatar">
+            <div class="contPresentacion">
+                <h2 class="name">Diego Canales</h2>
+                <p class="textoAvatar">Desarrollador Junior enfocado en convertirse en fullstack de Mendoza (Argentina)</p>
             </div>
-                <a href="#proyectos"><i class="bi bi-arrow-down-circle boton-flecha d-flex justify-content-center"></i></a>
+            <div class="d-flex gap-4 contenedorIconos align-items-center flex-wrap justify-content-center">
+                <article class="contenedorLinkedin">
+                    <a href=""><i class="bi bi-linkedin iconLinkedin"></i>Linkedin</a>
+                </article>
+                <article class="contenedorGithub">
+                    <a href=""><i class="bi bi-github iconGithub"></i>Github</a>
+                </article>
+                <article class="contenedorGithub">
+                    <a href=""><i class="bi bi-filetype-pdf"></i>CV</a>
+                </article>
+            </div>
+        </section>
+
+        <div class="mt-5 m-4 d-flex align-items-center">
+            <i class="bi bi-terminal"></i>
+            <h2 class="d-inline text-white">Proyectos</h2>
         </div>
-        <div class="contenedor">
-            <h3 class="text-center titulo fw-semibold mt-5" id="proyectos">Proyectos</h3>
-            <a href="https://victoliana.netlify.app/" target="_blank">
-                <div class="container d-flex flex-column align-items-center gap-5 tarjeta">
-                    <div class="tarjet imgProyectos shadow bg-body rounded">
-                        <div class="infoProyecto d-flex flex-column align-items-center">
-                            <span class="tituloInfo">Victoliana</span>
-                            <div class="d-flex justify-content-around">
-                                <img src="./assets/html-5-svgrepo-com.svg" alt="" class="iconTecnologia">
-                                <img src="./assets/css-3-svgrepo-com.svg" alt="" class="iconTecnologia">
-                                <img src="./assets/javascript-svgrepo-com.svg" alt="" class="iconTecnologia">
-                            </div>
-                            <a href="https://github.com/DiegoCanaless/Proyecto-Victoliana" target="_blank"><i class="bi bi-github iconInfo mt-4"></i></a>
-                        </div>
+        <section class="h-100 secciones d-flex justify-content-center flex-column align-items-center gap-4">
+            
+            <article class="cardProyecto1">
+                <div class="infoTarjeta">
+                    <h3 class="">Victoliana</h3>
+                    <span class="text-center m-1">Pagina Web de una tienda de ropa moderna</span>
+                    <div class="mt-2">
+                        <img src="./assets/html-5-svgrepo-com.svg" alt="" class="imgTecnologia">
+                        <img src="./assets/css-3-svgrepo-com.svg" alt="" class="imgTecnologia">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="" class="imgTecnologia">
+                    </div>
+                    <div class="mt-3">
+                        <a href=""><i class="bi bi-box-arrow-up-right imgEnlace p-2"></i></a>
+                        <a href=""><i class="bi bi-github imgEnlace"></i></a>
                     </div>
                 </div>
-            </a>
-            <a href="#contacto"><i class="bi bi-arrow-down-circle boton-flecha d-flex justify-content-center"></i></a>
-        </div>
-    </main>
-    <footer class="contenedor text-center">
-        <h3 class="titulo fw-semibold mb-5 pt-5">Contacto</h3>
-        <div class="d-flex flex-column align-items-center">
-            <input type="email" placeholder=" Correo... " name="text" class="input" id="contacto">
-            <textarea placeholder="Escribe tu mensaje..." name="message" class="input mensaje mb-5 mt-3" style="width: 30vh; height: 35vh;"></textarea>
-            <div class="contenedor-boton-enviar ocultar-botones">
-                <button class="btnEnviar"><span> Enviar </span></button>
-            </div>
-        </div>
+            </article>
+
+            <article class="cardProyecto2">
+                <div class="infoTarjeta">
+                    <h3 class="">Portafolio</h3>
+                    <span class="text-center m-1">Actual Portafolio Personal</span>
+                    <div class="mt-2">
+                        <img src="./assets/html-5-svgrepo-com.svg" alt="" class="imgTecnologia">
+                        <img src="./assets/css-3-svgrepo-com.svg" alt="" class="imgTecnologia">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="" class="imgTecnologia">
+                    </div>
+                    <div class="mt-3">
+                        <a href=""><i class="bi bi-box-arrow-up-right imgEnlace p-2"></i></a>
+                        <a href=""><i class="bi bi-github imgEnlace"></i></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="mt-5 m-4">
+            <article class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-file-person-fill"></i>
+                    <h2 class="d-inline text-white">Sobre Mi</h2>
+                </div>
+                <p class="text-white textSobreMi">Me llamo Diego Canales. Empecé en la programación con un curso de Desarrollo Web en CoderHouse. Actualmente me encuentro cursando una Tecnicatura de Programacion en la Universidad Tecnológica Nacional (UTN)</p>
+            </article>
+            <article class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-4">
+                    <i class="bi bi-gear"></i>
+                    <h2 class="d-inline text-white">Tecnologias</h2>
+                </div>
+                <div class="d-flex justify-content-around flex-wrap gap-4 align-items-center">
+                    <img src="./assets/html-5-svgrepo-com.svg" alt="" class="html">
+                    <img src="./assets/css-3-svgrepo-com.svg" alt="" class="css">
+                    <img src="./assets/bootstrap-svgrepo-com.svg" alt="" class="boostrap">
+                    <img src="./assets/javascript-svgrepo-com.svg" alt="" class="javascript">
+                    <img src="./assets/java-svgrepo-com.svg" alt="" class="java">
+                    <img src="./assets/python-svgrepo-com.svg" alt="" class="python">
+                </div>
+            </article>
+        </section>
+        <section class="mt-5 m-4">
+            <article class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-envelope-open-fill"></i>
+                    <h2 class="d-inline text-white">Contacto</h2>
+                </div>
+            </article>
+            <form action="" class="d-flex flex-column gap-3 align-items-center">
+                <label for=""><input type="text" placeholder="Nombre.." required></label>
+                <label for=""><input type="email" placeholder="Correo.." required></label>
+                <textarea name="" id="" placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit" class="btnEnviar">Enviar<i class="bi bi-arrow-right "></i></button>
+            </form>
+
+        </section>
         
-        <p class="copyright text-start">&#169;Copyright 2024  Diego Canales</p>
-    </footer>
+    </main>
+
+    
+
 
     <script defer src="./js/menu.js"></script>
     <script href="./js/bootstrap.bundle.min.js"></script>

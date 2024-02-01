@@ -1,298 +1,312 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
-  font-family: "REM", sans-serif;
-  font-size: 1rem;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-body {
-  background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23614c15' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+h2{
+    margin-bottom: 0px;
+}
+
+main{
+    padding: 10px;;
+}
+
+body{
+    background-color: #374151;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 a:hover{
-  color: black;
+    color: white;
 }
 
-header {
-  height: 100vh;
+h1{
+    display: block;
+    margin-top: 3px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+
+.encabezado{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    height: 8vh;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: #6c7b95;
+    margin-top: 15px;
+    border: 2px solid #546075;
 }
 
 .menu {
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  color: rgb(255, 255, 255);
-  height: 100%;
-  background-color: #ffffff;
-	overflow: auto;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
-
-  
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    height: 100%;
+    background-color: #374151;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    gap: 10px;
+    
 }
 
 .menu a {
-  line-height: 60px;
+    line-height: 60px;
+    font-size: 1rem;
 }
 
 .menu-abierto {
-  opacity: 1;
-  pointer-events: all;
+    opacity: 1;
+    pointer-events: all;
 }
-
-.imgAvatar {
-  width: 220px;
-  height: 240px;
-}
-
-header h1 {
-  font-size: 2.1rem;
-  color: black;
-}
-
-header span {
-  font-size: 1.4rem;
-  color: rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-
-div i {
-  font-size: 1.3rem;
-  color: rgb(0, 0, 0);
-}
-
 
 .cerrar-menu {
-  align-self: flex-end;
-  margin: 15px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  position: fixed;
+    align-self: flex-end;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    padding: 25px;
+    
+    
 }
 
 .abrir-menu {
-  margin: 15px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  position: fixed;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
 }
 
 .icono-menu {
-  width: 30px;
+    width: 30px;
 }
 
 .abrir-menu:focus:not(:focus-visible),
 .cerrar-menu:focus:not(:focus-visible) {
-  outline: none;
+    outline: none;
 }
 
-.Accommodate {
-  padding-bottom:18vh;
+.imgAvatar{
+    width: 250px ;
+    height: 240px;
+    margin-top: 1vh;
+    margin-left: 3vh;
+    padding: 5px;
+    border-radius: 255px;
+    border: 5px double #000000;
+    
+}
+
+.name{
+    margin-top: 1vh;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 10px 0px 10px;
+}
+
+.textoAvatar{
+    color: rgba(255, 255, 255, 0.682);
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1rem;
 }
 
 .menuTexto{
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 500;
-	border-bottom: 1px solid black;
-}
-
-.tarjeta{
-  margin-bottom: 27vh;
-}
-
-.textoSobreMi{
-  height: 60vh;
-  margin-bottom: 10vh;
+	border-bottom: 1px solid rgb(255, 255, 255);
+    transition-duration: 0.1s;
 }
 
 .menuTexto:hover{
-	color: black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.197);
 }
 
-.acomodarMenu{
-	margin-top: 10rem;
-}
-
-.boton-flecha {
-  font-size: 3rem;
-  margin-bottom: 10vh;
-}
-
-
-.contenedor{
-  width: 100%;
-  height: 100vh;
-}
-
-.contenedor2{
-  padding-top: 10vh;
-  margin-bottom: 7.1vh;
-}
 
 .bi-github,
 .bi-linkedin{
 font-size: 34px;
-}
-
-.titulo{
-  font-size: 2rem;
-  padding-top: 80px;
-}
-
-.tarjet{
-  width: 30vh;
-  height: 30vh;
+transition-duration: 0.2s;
 }
 
 
-.tituloInfo{
-  display: none;
-  font-size: 2rem;
-  margin-top: 7vh;
-}
-
-.iconInfo{
-  display: none;
-}
-
-.imgProyectos {
-  background-image: url("../assets/capturaVictoliana.jpg");
-  background-position: center center;
-  background-size: cover;
-  a:hover{
-    color: black
-  }
-  transition-duration: 10s;
-}
-
-.imgProyectos:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                    url("../assets/capturaVictoliana.jpg");
-  
-  .tituloInfo {
-    color: white;
-    display: block;
-  }
-  .iconInfo {
-    display: block;
-    color:white;
-  }
-  .iconTecnologia{
-    display: block;
-  }
-}
-
-.iconTecnologia{
-  width: 35px;
-  height: 35px;
-  display: none;
-}
-
-
-.contactoCorreo{
-  height: 35px;
-  border-radius: 12px;
-  border: 2px solid black;
-  color: black;
-}
-
-.mensaje{
-  border-radius: 8px;
-  border: 0.1px solid black;
-  color: black;
-  height: 30vh;
-  padding-top: 5px;
-}
-
-.btnEnviar {
-  padding: 0.1em 0.25em;
-  width: 13em;
-  height: 4.2em;
-  background-color: white;
-  border: 0.08em solid black;
-  border-radius: 0.3em;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.btnEnviar span {
-  position: static;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0.4em;
-  width: 8.25em;
-  height: 2.5em;
-  background-color: white;
-  border-radius: 0.2em;
-  font-size: 1.5em;
-  color: black;
-  border: 0.08em solid black;
-  box-shadow: 0 0.4em 0.1em 0.019em black;
-}
-
-.btnEnviar span:hover {
-  transition: all 0.2s;
-  transform: translate(0, 0.4em);
-  box-shadow: 0 0 0 0 black;
-}
-
-.btnEnviar button span:not(hover) {
-  transition: all 1s;
-}
-
-.input {
-  --input-focus: #2d8cf0;
-  --font-color: #323232;
-  --font-color-sub: #666;
-  --bg-color: #fff;
-  --main-color: #323232;
-  width: 200px;
-  height: 40px;
-  border-radius: 5px;
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
-  box-shadow: 4px 4px var(--main-color);
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--font-color);
-  padding: 5px 10px;
-  outline: none;
-  
-}
-
-.input::placeholder {
-  color: var(--font-color-sub);
-  opacity: 0.8;
-}
-
-.input:focus {
-  border: 2px solid var(--input-focus);
-}
-
-.copyright{
-  margin-top: 50%;
-}
 
 .menu-abierto .ocultar-botones {
-  display: none;
+    display: none;
 }
 
- /* A partir de 444xp se rompe la page
+.bi-linkedin,
+.bi-github{
+    font-size: 1.7rem;
+}
+
+.iconLinkedin,
+.iconGithub,
+.bi-filetype-pdf{
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+.contenedorLinkedin{
+    background-color: rgba(255, 255, 255, 0.078);
+    padding: 5px 10px 5px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+}
+
+.contenedorGithub{
+    background-color: rgba(255, 255, 255, 0.078);
+    padding: 5px 10px 5px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+}
+
+.contenedorLinkedin:hover,
+.contenedorGithub:hover{
+    transform: scale(1.1);
+}
+
+
+.bi-terminal,
+.bi-file-person-fill,
+.bi-gear,
+.bi-envelope-open-fill{
+    color: white;
+    font-size: 1.9rem;
+    padding-right: 10px;
+}
+
+.secciones{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.cardProyecto1{
+    width: 100%;
+    height: 220px;
+    background: url("../assets/capturaVictoliana.jpg") center/cover no-repeat;
+    padding: 20px;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.cardProyecto1:hover{
+    background: aliceblue;
+    .infoTarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cardProyecto2{
+    width: 100%;
+    height: 220px;
+    background: url("../assets/capturaPortafolio.PNG") center/cover no-repeat;
+    padding: 20px;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.cardProyecto2:hover{
+    background: aliceblue;
+    .infoTarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.imgTecnologia{
+    width: 5vh;
+    height: 5vh;
+}
+
+.imgEnlace{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.infoTarjeta{
+    display: none;
+}
+
+.textSobreMi{
+    font-size: 1rem;
+}
+
+.html,
+.css,
+.java,
+.python{
+    width: 9vh;
+    height: 9vh;
+}
+
+.boostrap,
+.javascript{
+    width: 8vh;
+    height: 8vh;
+}
+
+input{
+    width: 40vh;
+    border-radius: 20px;
+    border: 1px solid #374151;
+    padding: 10px;
+}
+
+textarea{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20px;
+    border: 1px solid #374151;
+    padding: 10px;
+}
+
+.btnEnviar{
+    width: 160px;
+    padding: 4px;
+    padding-left: 10px;
+    border-radius: 120px;
+    font-size: 1.2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.bi-arrow-right{
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
