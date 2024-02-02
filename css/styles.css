@@ -3,11 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
     font-size: 1rem;
-    font-weight: 400;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
 }
 
 h2{
     margin-bottom: 0px;
+    font-size: 1.5rem;
 }
 
 main{
@@ -37,6 +39,7 @@ h1{
     margin-left: 15px;
     font-size: 1.5rem;
     margin-bottom: 0px;
+    font-weight: 700;
 }
 
 
@@ -52,6 +55,10 @@ h1{
     background-color: #6c7b95;
     margin-top: 15px;
     border: 2px solid #546075;
+}
+
+.fecha{
+    font-size: 1rem;
 }
 
 .menu {
@@ -74,7 +81,7 @@ h1{
 
 .menu a {
     line-height: 60px;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .menu-abierto {
@@ -97,7 +104,7 @@ h1{
     border: none;
     background: none;
     cursor: pointer;
-    margin-right: 15px;
+
 }
 
 .icono-menu {
@@ -116,7 +123,7 @@ h1{
     margin-left: 3vh;
     padding: 5px;
     border-radius: 255px;
-    border: 5px double #000000;
+    border: 4px double rgba(255, 255, 255, 0.56);
     
 }
 
@@ -124,7 +131,7 @@ h1{
     margin-top: 1vh;
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     padding: 10px 10px 0px 10px;
 }
@@ -265,7 +272,7 @@ transition-duration: 0.2s;
 }
 
 .textSobreMi{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 50px;
 }
 
@@ -358,7 +365,7 @@ button:active {
 }
 
 .tituloCertificado{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .bi-calendar{
@@ -367,12 +374,266 @@ button:active {
     opacity: 0.75;
 }
 
-h2{
-    font-size: 2rem;
-}
+
 
 .iconCertificado{
     color: white;
-    margin-left: 200px;
+    margin-left: 160px;
     font-size: 1.5rem;
 }
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer{
+    height: 100%;
+    background-color: #525e718b;
+}
+
+@media screen and (min-width: 552px) {
+    main{
+        padding: 10px 10vh 0vh 10vh;
+    }
+}
+
+
+@media screen and (min-width: 630px) {
+    .cardProyecto1,
+    .cardProyecto2{
+        height: 320px;
+
+    }
+
+    .imgAvatar{
+        width: 40vh ;
+        height: 40vh;
+    }
+
+    .name{
+        font-size: 1.8rem;
+    }
+
+    .textoAvatar{
+        font-size: 1rem;
+    }
+
+    .iconLinkedin,
+    .iconGithub,
+    .bi-filetype-pdf{
+        font-size: 1.3rem;
+        padding-right: 10px;
+    }
+
+    .infoTarjeta{
+        margin-top: 2.5vh;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+
+    .textCard{
+        font-size: 1rem;
+    }
+
+    .imgTecnologia{
+        width: 7vh;
+        height: 7vh;
+    }
+
+    .imgEnlace{
+        font-size: 1.8rem;
+    }
+
+
+    .textSobreMi{
+        font-size: 1.1rem;
+    }
+
+    .html,
+    .css,
+    .java,
+    .python{
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .boostrap,
+    .javascript{
+        width: 9vh;
+        height: 9vh;
+    }
+
+    .tituloCertificado{
+        font-size: 1.1rem;
+    }
+
+    .bi-calendar{
+        font-size: 1.3rem;
+        opacity: 0.75;
+    }
+
+    .fecha{
+        font-size: 1rem;
+    }
+    
+    input{
+        font-size: 1.1rem;
+    }
+    
+    textarea{
+        width: 45vh;
+        height: 40vh;
+        font-size: 1.2rem;
+    }
+
+    .icono-menu {
+        width: 40px;
+    }   
+}
+
+@media screen and (min-width: 750px) {
+
+    .menu a {
+        line-height: 15vh;
+        font-size: 1.8rem;
+    }
+
+    .menu .bi-github,
+    .menu .bi-linkedin{
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    .cardProyecto1,
+    .cardProyecto2{
+        height: 50vh;
+    }
+
+    .infoTarjeta{
+        margin-top: 10vh;
+    }
+    
+    main{
+        padding: 10px 20vh 0vh 20vh;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .cardProyecto1,
+    .cardProyecto2{
+        height: 50vh;
+    }
+
+    .infoTarjeta{
+        margin-top: 10vh;
+    }
+    
+    main{
+        padding: 10px 20vh 0vh 20vh;
+    }
+}
+
+@media screen and (min-width: 995px) {
+    
+    textarea{
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+.encabezado{
+    position: relative;
+    height: 60px;
+}
+
+
+.menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    color: white;
+    opacity: 1;
+    pointer-events: all;
+    gap: 50px;
+    background: none;
+    top: -11vh;
+    
+}
+
+    .menu a {
+        font-size: 1.1rem;
+    }
+
+    .menu-abierto {
+        opacity: 1;
+        pointer-events: all;
+        display: none;
+    }
+
+    .cerrar-menu {
+        align-self: flex-end;
+        border: none;
+        background: none;
+        cursor: pointer;
+        position: relative;
+        padding: 25px;
+        
+        
+    }
+
+    .abrir-menu {
+        border: none;
+        background: none;
+        cursor: pointer;
+
+    }
+
+    .icono-menu {
+        width: 30px;
+        display: none;
+    }
+
+    .abrir-menu:focus:not(:focus-visible),
+    .cerrar-menu:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+
+    .Accommodate{
+        margin-right: 30px;
+    }
+
+    .menu .bi-github,
+    .menu .bi-linkedin{
+        font-size: 2rem;
+    }
+
+    .menuTexto:hover{
+        padding: 10px;
+        border-radius: 40px;
+        background-color: rgba(255, 255, 255, 0.429);
+    }
+    
+}
+
+@media screen and (min-width: 1250px) {
+    
+    main{
+        padding: 10px 40vh 0vh 40vh;
+    }
+
+}
+
