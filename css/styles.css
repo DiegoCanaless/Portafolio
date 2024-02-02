@@ -553,9 +553,13 @@ footer{
 
 @media screen and (min-width: 1200px) {
 
+    nav{
+        height: 100px;
+        
+    }
+
 .encabezado{
     position: relative;
-    height: 60px;
 }
 
 
@@ -569,12 +573,14 @@ footer{
     pointer-events: all;
     gap: 50px;
     background: none;
-    top: -12vh;
-    
+    top: -70px;
+    overflow: none;
+    scrollbar-width: none;
 }
 
     .menu a {
         font-size: 1.1rem;
+    
     }
 
     .menu-abierto {
@@ -613,12 +619,12 @@ footer{
 
 
     .Accommodate{
-        margin-right: 30px;
+        margin-right: 50px;
     }
 
     .menu .bi-github,
     .menu .bi-linkedin{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .menuTexto:hover{
@@ -627,6 +633,9 @@ footer{
         background-color: rgba(255, 255, 255, 0.429);
     }
     
+    h1{
+        color: white;
+    }
 }
 
 @media screen and (min-width: 1250px) {
@@ -636,4 +645,5 @@ footer{
     }
 
 }
+
 
