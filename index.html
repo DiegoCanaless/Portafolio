@@ -139,11 +139,21 @@
                     <h2 class="d-inline text-white">Contacto</h2>
                 </div>
             </article>
-            <form action="">
+            <form action="https://formsubmit.co/33e4df0b0feaaf5c2888faa9cb98a86e" method="POST">
                 <div class="d-flex flex-column gap-3 align-items-center mt-3  flex-lg-row flex-wrap justify-content-center">
-                    <label for=""><input type="text" placeholder="Nombre.." required></label>
-                    <label for=""><input type="email" placeholder="Correo.." required></label>
-                    <textarea name="" id="" placeholder="Escribe tu mensaje..." class=""  required></textarea>
+                    <label for="Nombre" class="oculto">Nombre</label>
+                    <input type="text" name="Nombre" placeholder="Nombre.." required>
+
+                    <label for="Correo" class="oculto">Email</label>
+                    <input type="email" name="Correo" placeholder="Correo.." required>
+
+                    <label for="Mensaje" class="oculto"></label>
+                    <textarea name="Mensaje" id="" placeholder="Escribe tu mensaje..." class=""  required></textarea>
+                    
+                    <input type="hidden" name="_next" value="https://diegocanaless.github.io/Portafolio/">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
                 </div>
                 <div class="d-flex justify-content-center mt-3">
                     <button>
