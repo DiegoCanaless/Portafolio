@@ -1,0 +1,624 @@
+:root{
+    --colorFondo: #131314;
+    --colorTexto: #ffffff;
+    --colorVerde: #8BD9AD;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    font-family: "Overpass", sans-serif;
+    font-weight: 300;
+    color: var(--colorTexto);
+    z-index: 1;
+}
+
+body{
+    background-color: var(--colorFondo);
+}
+
+p{
+    margin: 0px;
+}
+
+.contenedorImg{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: block;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--colorFondo);
+    padding: 2vh 5vw;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 5px #76d19f9c, 0 10px 10px #63977a17;
+    transition-duration: 0.5s;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.bi-list, .bi-x-lg{
+    font-size: 1.5rem;
+    color: var(--colorTexto);
+    cursor: pointer;
+}
+
+
+.linksNav{
+    display: none;
+}
+
+.linksNav a{
+    font-size: 1.1rem;
+    opacity: 1;
+    position: relative; /* Necesario para el pseudo-elemento */
+    color: var(--colorTexto); /* Usa tu variable para color de texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.5s ease; /* Transición para el color del texto */
+}
+
+.linksNav a::after {
+    content: ""; /* Pseudo-elemento vacío */
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Línea justo debajo del texto */
+    width: 0; /* Ancho inicial */
+    height: 2px; /* Grosor de la línea */
+    background-color: var(--colorVerde); /* Usa tu color verde */
+    transition: width 0.5s ease; /* Animación del ancho */
+}
+
+.linksNav a:hover {
+    color: var(--colorVerde); /* Cambia el color del texto al pasar el mouse */
+}
+
+.linksNav a:hover::after {
+    width: 100%; /* La línea subrayada se extiende al 100% del enlace */
+}
+
+.menuAbierto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5vh;
+    margin-top: 2.5vh;
+}
+
+.contenedorNavbar{
+    height: 15vh;
+}
+
+h1{
+    color: var(--colorVerde);
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+    
+}
+header{
+    height: 80vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.infoHeader p{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.contenedorEnlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5vh;
+    
+}
+.mostrarLink {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+
+.enlace{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--colorVerde);
+    border-radius: 15px;
+    transition-duration: 1s;
+}
+
+main{
+    height: auto;
+    width: 100%;
+    padding: 0px 5vh;
+    margin-top: 5vh;
+}
+
+.iconProyectos{
+    width: 30px;
+    height: 30px;
+}
+
+.tituloProyectos{
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.seccionProyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0px;
+    gap: 20px;
+}
+
+.contenedorProyecto{
+    width: 250px;
+    height: auto;
+    background-color: black;
+    border: 1px solid var(--colorVerde);
+    border-radius: 16px;
+    border-top: 8px solid #8BD9AD;
+    padding: 15px 15px;
+}
+
+.imgProyecto{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.tecnologiasEmpleadas {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.tecnologiasEmpleadas img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.tecnologia {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--colorVerde);
+    border-radius: 8px;
+    padding: 3px 5px;
+}
+
+.descripcionProyecto{
+    padding: 15px 0px;
+    font-size: 1rem;
+}
+
+.contenedorVistas{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.contenedorVistas img{
+    width: 15px;
+    height: 15px;
+    display: block;
+} 
+
+.contVerProyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorFondo);
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 16px; 
+    box-shadow: 3px 3px 3px #76d19f9c, 6px 6px 6px #63977a17;
+    margin-bottom: 10px;
+}
+
+.enlaceProyecto{
+    cursor: pointer;
+}
+
+.contenedorImgSobreMi{
+    display: none;
+}
+
+.contenedorTextoSobreMi{
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.contenedorTextoSobreMi p{
+    font-weight: 300;
+    width: 80%;
+    margin: auto;
+}
+
+.contenedorSkills{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin-top: 5vh;
+    gap: 5px;
+}
+
+.contenedorSkills div{
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.contenedorSkills img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.formularioContactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 5vh 0vw;
+    padding: 2.5vh;
+    gap: 15px;
+    background-color: black;
+    margin-bottom: 10vh;
+}
+
+.tituloContactanos {
+    margin: 5vh 0px 0px 0px;
+}
+
+.textareaContacto {
+    resize: none;
+    min-height: 120px;
+    box-sizing: border-box; /* Corregido aquí */
+    border: 1px solid var(--colorFondo);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--colorFondo);
+}
+
+.contenedorContactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputsContactanos {
+    border: 1px solid var(--colorFondo);
+    background-color: var(--colorFondo);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 5px auto;
+    box-sizing: border-box; /* Asegura que el ancho incluya el padding y borde */
+}
+
+.btnSubmitContacto {
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: var(--colorFondo);
+    color: white;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    padding: 0.4rem 0.8rem;
+    border: none;
+}
+
+.btnSubmitContacto:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Asegúrate de que los label tengan display: flex y flex-direction: column */
+.formularioContactanos label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.contactoFooter i{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #76d19f9c, 6px 6px 6px #63977a17;
+    font-size: 2rem;
+    color: var(--colorVerde);
+    transition-duration: 0.5s;
+}
+
+Footer p{
+    margin-bottom: 5vh;
+}
+
+footer{
+    border-bottom: 10px solid var(--colorVerde);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.contenedorEnlaces .enlace i, 
+.contenedorEnlaces .enlace p {
+    transition: color 0.5s ease;
+}
+
+
+.contenedorEnlaces a:hover{
+    .enlace i , .enlace p{
+        color: var(--colorVerde);
+    }
+
+}
+
+.contactoFooter i:hover{
+    color: white;
+    box-shadow: 3px 3px 3px white, 6px 6px 6px whitesmoke;
+}
+
+
+
+@media(min-width: 410px){
+    .contenedorProyecto{
+        width: 350px;
+    }
+
+    .formularioContactanos {
+        width: 80vw;
+        margin: 5vh auto;
+    }
+}
+
+
+
+@media(min-width: 768px){
+
+    .formularioContactanos{
+        width: 60vw;
+        margin-bottom: 15vh;
+    }
+    
+
+    .inputsContactanos {
+        width: 50vw;
+    }
+
+    .textareaContacto {
+        width: 50vw;
+    }
+    .formularioContactanos label{
+        font-size: 1.1rem;
+    }
+
+    .contenedorSkills img{
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    .imgProyecto{
+        height: 200px;
+    }
+
+    main{
+        padding: 0px 20vh;
+    }
+
+    .seccionProyectos{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contenedorEnlaces{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .infoHeader{
+        width: 70%;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        padding: 5vh 15vh;
+        width: 100%;
+        height: 75vh;
+        margin-top: 0px;
+    }
+
+    .contenedorImg{
+        display: block;
+        width: 30%;
+    }
+
+    .contenedorImg img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .contenedorNavbar{
+        display: flex;
+        justify-content: center;
+        height: 25vh;
+    }
+
+    nav{
+        margin: 5vh auto;
+        width: 600px;
+        height: 10vh;
+        border-radius: 15px;
+        padding: 2.5vh;
+        box-shadow: 0 5px 5px #76d19f9c, 0 10px 10px #63977a17;
+    }
+
+    .bi-list{
+        display: none;
+    }
+
+    .linksNav{
+        width: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+
+
+    .contenedorImgSobreMi{
+        display: block;
+    }
+
+    .seccionSobreMi{
+        display: flex;
+        margin: 5vh 0vw;
+        justify-content: center;
+    }
+
+}
+
+@media(min-width: 1024px){
+
+    .seccionProyectos{
+        justify-content: space-around;
+    }
+    .contenedorTextoSobreMi p{
+        width: 100%;
+        padding: 5vh;
+    }
+
+    h1{
+        text-align: start;
+        font-size: 3rem;
+    }
+
+    .infoHeader p{
+        font-size: 1rem;
+        margin: 0px;
+    }
+
+
+    .contenedorImg img{
+        width: 250px;
+        height: 300px;
+    }
+
+    .contenedorHeader{
+        padding: 10vh 20vh;
+    }
+    
+
+    .linksNav a{
+        font-size: 1.2rem;
+    }
+
+    .contenedorEnlaces{
+        justify-content: start;
+    }
+}
+
+@media(min-width: 1200px){
+
+    .contenedorVistas img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .descripcionProyecto{
+        font-size: 1.25rem;
+    }
+
+    .tecnologia{
+        width: 60px;
+        height: 60px;
+    }
+
+    .tecnologiasEmpleadas img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .linksNav a{
+        font-size: 1.25rem;
+    }
+
+    h1{
+        font-size: 3.2rem;
+    }
+
+    .infoHeader p{
+        font-size: 1.25rem;
+    }
+
+    .enlace{
+        width: 160px;
+    }
+
+    .iconProyectos{
+        width: 40px;
+        height: 40px;
+    }
+
+    .tituloProyectos{
+        font-size: 1.5rem;
+    }
+
+    .contenedorProyecto{
+        width: 500px;
+    }
+
+    .imgProyecto{
+        height: 250px;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .contenedorTextoSobreMi p{
+        font-size: 1.3rem;
+    }
+}
