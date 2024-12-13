@@ -15,6 +15,10 @@
     z-index: 1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--colorFondo);
 }
@@ -395,6 +399,7 @@ input:focus, textarea:focus {
     box-shadow: 3px 3px 3px white, 6px 6px 6px whitesmoke;
 }
 
+  
 
 
 @media(min-width: 410px){
@@ -411,6 +416,10 @@ input:focus, textarea:focus {
 
 
 @media(min-width: 768px){
+
+    .descripcionProyecto{
+        height: 330px;
+    }
 
     .formularioContactanos{
         width: 60vw;
@@ -518,6 +527,15 @@ input:focus, textarea:focus {
         justify-content: center;
     }
 
+    
+
+}
+
+@media(min-width: 962px){
+    .descripcionProyecto{
+        height: 230px;
+
+    }
 }
 
 @media(min-width: 1024px){
@@ -561,6 +579,11 @@ input:focus, textarea:focus {
 }
 
 @media(min-width: 1200px){
+
+    .descripcionProyecto{
+        height: 300px;
+
+    }
 
     .contenedorVistas img{
         width: 25px;
@@ -620,5 +643,11 @@ input:focus, textarea:focus {
 
     .contenedorTextoSobreMi p{
         font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1254px){
+    .descripcionProyecto{
+        height: 250px;
     }
 }

@@ -27,3 +27,38 @@ abrirMenu.addEventListener("click", () => {
         links.forEach(link => link.classList.remove("mostrarLink"));
     }
 });
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_0u4t3rp';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      Toastify({
+        text: "Se envio correctamente",
+        duration: 2000,
+        style: {
+            background: "linear-gradient(to right,rgb(67, 184, 32), #96c93d)",
+            
+        },
+        }).showToast();
+    }, (err) => {
+      btn.value = 'Send Email';
+      Toastify({
+        text: "Surgio un problema",
+        duration: 2000,
+        style: {
+            background: "linear-gradient(to right,rgb(184, 55, 32),rgb(206, 53, 15))",
+        },
+        }).showToast();
+    });
+});
