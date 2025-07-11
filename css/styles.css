@@ -4,6 +4,51 @@
     --colorVerde: #8BD9AD;
 }
 
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bounceInLeft {
+  animation: bounceInLeft 1.2s both;
+}
+
+/* Animación lateral derecha (contenedorImg) */
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bounceInRight {
+  animation: bounceInRight 1.2s both;
+}
+
 *{
     box-sizing: border-box;
     margin: 0px;
