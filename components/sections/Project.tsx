@@ -9,7 +9,7 @@ export default function Project() {
 
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <CardProject
-                        imagen="/rjc.png"
+                        imagen="/rjc.webp"
                         titulo="RJC - Transportes"
                         descripcion="Landing Page para empresa de Transportes de personas discapcitadas"
                         tecnologias={["NextJS", "Tailwind"]}
@@ -18,7 +18,7 @@ export default function Project() {
                         deployment= {true}
                     />
                     <CardProject
-                        imagen="/zarp.png"
+                        imagen="/zarp.webp"
                         titulo="Zarp"
                         descripcion="Plataforma que conecta dueños e inquilinos para alojamientos temporales"
                         tecnologias={["ReactJS", "Typescript", "Tailwind"]}
@@ -27,7 +27,7 @@ export default function Project() {
                         deploy=""
                     />
                     <CardProject
-                        imagen="/bigbite.png"
+                        imagen="/bigbite.webp"
                         titulo="Big Bite"
                         descripcion="Eccomerce de comida rapida hecho para proyecto de facultad"
                         tecnologias={["ReactJS", "Typescript", "Boostrap"]}
