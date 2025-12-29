@@ -6,5 +6,16 @@
 
 body {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* globals.css */
+.input-base {
+  @apply bg-gray-900 px-4 py-2 text-xs rounded-md text-white border border-slate-700 transition outline-none hover:border-secondary focus:border-secondary focus:ring-1 focus:ring-secondary;
 }

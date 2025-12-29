@@ -8,7 +8,7 @@ export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = useState<boolean>(false)
 
     const enlaces = [
-        { icon: <FaHouse size={22} />, label: "Inicio", href: "/#Home" },
+        { icon: <FaHouse size={22} />, label: "Inicio", href: "/#Hero" },
         { icon: <FaBriefcase size={22} />, label: "Proyectos", href: "/#Project" },
         { icon: <FaUser size={22} />, label: "Sobre Mí", href: "/#About" },
         { icon: <FaEnvelope size={22} />, label: "Contacto", href: "/#Contact" },
@@ -21,13 +21,13 @@ export default function Navbar() {
 
     return (
         <>
-            <nav onClick={() => { setNavbarOpen(!navbarOpen) }} className={`z-20 transition-colors cursor-pointer w-10 h-10 fixed rounded-xl top-5 right-5  flex justify-center items-center   ${navbarOpen ? "bg-secondary" : "border-gray-700 border bg-opaque"} md:hidden`}>
+            <nav onClick={() => { setNavbarOpen(!navbarOpen) }} className={`z-20 transition-colors cursor-pointer w-10 h-10 fixed rounded-xl top-5 right-5  flex justify-center items-center   ${navbarOpen ? "bg-secondary" : "border-gray-700 border bg-opaque"} lg:hidden`}>
                 {navbarOpen ? (
                     <FaXmark className={`transition-colors z-20`} size={20} />
                 ) : <FaBars color="white" className={`transition-colors z-20`} size={20} />}
             </nav>
 
-            <nav className="hidden text-gray-200 shadow-md shadow-secondary justify-center px-6  rounded-xl py-2 gap-10 fixed top-5 left-1/2 -translate-x-1/2 items-center md:flex">
+            <nav className="hidden z-20 text-gray-200 shadow-md shadow-secondary justify-center px-6  rounded-xl py-2 gap-10 fixed top-5 left-1/2 -translate-x-1/2 items-center bg-primary lg:flex">
                 {enlaces.map((e) => (
                     <a key={e.href} href={e.href} className="p-2 px-4 py-2 whitespace-nowrap  transition-colors cursor-pointer rounded-2xl hover:bg-gray-600/25 hover:text-light" >
                         {e.label}
@@ -51,7 +51,7 @@ export default function Navbar() {
                     <div className="flex gap-5 mt-2 text-white transition-colors">
                         {redes.map((e) => {
                             return (
-                                <a key={e.href} target="_blank" rel="noopener noreferrer" href={e.href} className="cursor-pointer flex justify-center items-center p-4 bg-dark border rounded-lg border-gray-700 hover:text-secondary">{e.icon}</a>
+                                <a key={e.href} target="_blank" rel="noopener noreferrer" href={e.href} className="cursor-pointer flex justify-center items-center p-4 border-secondary border rounded-lg bg-opaque hover:text-secondary">{e.icon}</a>
                             )
                         })}
                     </div>
