@@ -23,8 +23,8 @@ export default function Project() {
                         descripcion="Plataforma que conecta dueños e inquilinos para alojamientos temporales"
                         tecnologias={["ReactJS", "Typescript", "Tailwind"]}
                         github="https://github.com/DiegoCanaless/Zarp"
-                        deployment= {false}
-                        deploy=""
+                        deployment= {true}
+                        deploy="https://zarp-sepia.vercel.app/"
                     />
                     <CardProject
                         imagen="/bigbite.webp"
