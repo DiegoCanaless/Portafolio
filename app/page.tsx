@@ -16,8 +16,8 @@ export default function Home() {
       <Navbar />
       <main className="h-auto bg-primary text-light px-4 ">
         <Hero />
-        <Project />
         <About />
+        <Project />
         <Form />
       </main>
       <Footer />

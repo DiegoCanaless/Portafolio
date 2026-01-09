@@ -15,7 +15,7 @@ export default function Hero() {
 
                 {/* Rol y ubicación */}
                 <p className="mt-4 text-lg md:text-xl text-gray-300">
-                    Programador Frontend JR · 22 años · Mendoza, Argentina
+                    Programador Frontend · Mendoza Argentina
                 </p>
 
                 {/* Descripción breve */}

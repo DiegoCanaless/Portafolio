@@ -29,7 +29,7 @@ export default function Project() {
                     <CardProject
                         imagen="/bigbite.webp"
                         titulo="Big Bite"
-                        descripcion="Eccomerce de comida rapida hecho para proyecto de facultad"
+                        descripcion="Eccomerce de comida rapida"
                         tecnologias={["ReactJS", "Typescript", "Boostrap"]}
                         github="https://github.com/diegoCardenas03/ElBuenSabor"
                         deployment= {false}

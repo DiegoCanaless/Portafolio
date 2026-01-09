@@ -37,20 +37,7 @@ export default function ContactForm() {
                 </div>
 
                 {/* CONTENIDO */}
-                <div className="w-full max-w-5xl flex flex-col gap-6 lg:flex-row lg:items-center">
-                    {/* DATOS DE CONTACTO */}
-                    <div className="w-full flex flex-col gap-3 lg:w-1/3">
-                        <CardContact
-                            icon={<FaEnvelope size={18} className="text-secondary" />}
-                            title="EMAIL"
-                            value="diegocanales112@gmail.com"
-                        />
-                        <CardContact
-                            icon={<FaPhone size={18} className="text-sky-400" />}
-                            title="WHATSAPP"
-                            value="+5492612430088"
-                        />
-                    </div>
+                <div className="w-full max-w-5xl flex flex-col items-center">
 
                     {/* FORMULARIO */}
                     <div className="w-full lg:w-2/3">
