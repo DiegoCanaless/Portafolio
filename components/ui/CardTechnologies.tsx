@@ -12,18 +12,19 @@ export default function CardTechnologies({
     technologies,
 }: CardTechnologiesProps) {
     return (
-        <div className=" bg-gray-900 border border-slate-700 rounded-xl p-5 flex flex-col gap-3 group transition-colors hover:border-secondary">
+        <div className="bg-gray-900 border border-slate-700 rounded-xl p-6 flex flex-col gap-4 transition-all hover:border-secondary hover:scale-[1.02]">
+            
             <div className="w-fit p-2 rounded-lg bg-secondary/10">
                 {icon}
             </div>
 
-            <h5 className="text-sm font-semibold text-light group-hover:text-secondary">
+            <h5 className="text-sm font-semibold text-light">
                 {title}
             </h5>
 
             <ul className="list-disc list-inside text-slate-400 text-xs space-y-1">
                 {technologies.map((tech) => (
-                    <li key={tech} className="group-hover:marker:text-secondary">
+                    <li key={tech}>
                         {tech}
                     </li>
                 ))}

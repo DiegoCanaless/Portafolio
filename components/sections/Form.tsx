@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import CardContact from "../ui/CardContact";
-import { FaPhone, FaEnvelope, FaPaperPlane } from "react-icons/fa6";
+import { FaEnvelope, FaPaperPlane, FaPhone } from "react-icons/fa6";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { ContactSchema } from "@/validations/contactSchema";
 import emailjs from "@emailjs/browser";
@@ -11,7 +10,7 @@ import Toast, { ToastType } from "../ui/ToastForm";
 export default function ContactForm() {
     const [toast, setToast] = useState<{
         type: ToastType;
-        message: string; 
+        message: string;
     } | null>(null);
 
     return (
@@ -24,23 +23,31 @@ export default function ContactForm() {
                 />
             )}
 
-            <section
-                id="Contact"
-                className="min-h-screen flex flex-col justify-center items-center px-5"
-            >
-                {/* TÍTULO */}
-                <div className="text-center mb-10">
-                    <h3 className="text-lg mt-10">¡ Hablemos !</h3>
-                    <p className="text-slate-400 text-xs mt-2">
-                        ¿Tienes un proyecto en mente o solo quieres saludar?
-                    </p>
-                </div>
+            <section id="Contact" className="min-h-screen flex items-center justify-center px-4" >
+                <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12">
 
-                {/* CONTENIDO */}
-                <div className="w-full max-w-5xl flex flex-col items-center">
+                    <div className="flex flex-col justify-center">
+                        <p className="text-secondary font-medium mb-2">Contacto</p>
 
-                    {/* FORMULARIO */}
-                    <div className="w-full lg:w-2/3">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Tenés un proyecto en mente?</h2>
+
+                        <p className="text-gray-400 max-w-md mb-6">Estoy disponible para trabajar en nuevos proyectos,mejorar productos existentes o colaborar en equipo.</p>
+
+                        <div className="flex flex-col gap-4 text-sm text-gray-300">
+                            <div className="flex items-center gap-3">
+                                <FaEnvelope className="text-secondary" />
+                                <span>diegocanales112@gmail.com</span>
+                            </div>
+
+                            <div className="flex items-center gap-3">
+                                <FaPhone className="text-secondary" />
+                                <span>Disponible para contacto</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 🧾 FORMULARIO */}
+                    <div className="w-full">
                         <Formik
                             initialValues={{
                                 name: "",
@@ -73,12 +80,9 @@ export default function ContactForm() {
 
                                     resetForm();
                                 } catch (error) {
-                                    console.error("EmailJS error:", error);
-
                                     setToast({
                                         type: "error",
-                                        message:
-                                            "Ocurrió un error al enviar el mensaje",
+                                        message: "Ocurrió un error al enviar el mensaje",
                                     });
                                 } finally {
                                     setSubmitting(false);
@@ -86,73 +90,26 @@ export default function ContactForm() {
                             }}
                         >
                             {({ isSubmitting }) => (
-                                <Form className="flex flex-col gap-4 bg-gray-900 p-5 rounded-xl border border-slate-700">
-                                    {/* NOMBRE */}
-                                    <div className="flex flex-col gap-1">
-                                        <label className="sr-only">
-                                            Nombre y Apellido
-                                        </label>
-                                        <Field
-                                            name="name"
-                                            type="text"
-                                            placeholder="Martín Pérez"
-                                            className="input-base"
-                                        />
-                                        <ErrorMessage
-                                            name="name"
-                                            component="p"
-                                            className="text-red-500 text-xs"
-                                        />
-                                    </div>
+                                <Form className="flex flex-col gap-4 bg-gray-900 p-6 rounded-xl border border-slate-700 shadow-lg">
 
-                                    {/* EMAIL */}
-                                    <div className="flex flex-col gap-1">
-                                        <label className="sr-only">Email</label>
-                                        <Field
-                                            name="email"
-                                            type="email"
-                                            placeholder="martin@email.com"
-                                            className="input-base"
-                                        />
-                                        <ErrorMessage
-                                            name="email"
-                                            component="p"
-                                            className="text-red-500 text-xs"
-                                        />
-                                    </div>
+                                    <Field name="name" type="text" placeholder="Nombre completo" className="input-base" />
+                                    <ErrorMessage name="name" component="p" className="text-red-500 text-xs" />
 
-                                    {/* MENSAJE */}
-                                    <div className="flex flex-col gap-1">
-                                        <label className="sr-only">Mensaje</label>
-                                        <Field
-                                            as="textarea"
-                                            name="message"
-                                            placeholder="Ingrese su consulta"
-                                            rows={4}
-                                            className="input-base resize-none"
-                                        />
-                                        <ErrorMessage
-                                            name="message"
-                                            component="p"
-                                            className="text-red-500 text-xs"
-                                        />
-                                    </div>
+                                    <Field name="email" type="email" placeholder="Email" className="input-base" />
+                                    <ErrorMessage name="email" component="p" className="text-red-500 text-xs" />
 
-                                    {/* BOTÓN */}
-                                    <button
-                                        type="submit"
-                                        disabled={isSubmitting}
-                                        className="flex items-center justify-center gap-2 h-10 w-full rounded-lg bg-secondary transition disabled:opacity-50 disabled:cursor-not-allowed"
-                                    >
-                                        {isSubmitting
-                                            ? "Enviando..."
-                                            : "Enviar Consulta"}
+                                    <Field as="textarea" name="message" placeholder="Contame sobre tu proyecto..." rows={4} className="input-base resize-none" />
+                                    <ErrorMessage name="message" component="p" className="text-red-500 text-xs" />
+
+                                    <button type="submit" disabled={isSubmitting} className="flex items-center justify-center gap-2 h-11 w-full rounded-lg bg-secondary hover:scale-[1.02] transition disabled:opacity-50" >
+                                        {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                                         <FaPaperPlane />
                                     </button>
                                 </Form>
                             )}
                         </Formik>
                     </div>
+
                 </div>
             </section>
         </>

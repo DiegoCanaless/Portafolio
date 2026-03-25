@@ -2,51 +2,86 @@ import { FaCode, FaDatabase, FaTerminal, FaMicrochip, FaBorderAll } from "react-
 import CardTechnologies from "../ui/CardTechnologies";
 
 export default function About() {
-
-    const softSkills = ["Trabajo en Equipo", "Autodidacta", "Resolución de problemas", "Pensamiento crítico"]
+    const softSkills = [
+        "Trabajo en Equipo",
+        "Autodidacta",
+        "Resolución de problemas",
+        "Pensamiento crítico",
+    ];
 
     return (
-        <div id="About" className="min-h-screen flex flex-col items-center justify-center lg:flex-row lg:gap-4 lg:justify-around lg:px-4">
-            <section className="flex flex-col px-5 py-4">
-                <h2 className="text-xl font-semibold mb-5">Sobre Mi</h2>
+        <section id="About" className="min-h-screen flex items-center justify-center px-4" >
+            <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12">
 
-                {/* Texto */}
-                <div className="text-center md:text-start text-slate-400 space-y-4 mb-8">
-                    <p>
-                        Soy <span className="text-secondary">Técnico Universitario en Programación</span>,
-                        egresado de la UTN (FRM).
-                    </p>
+                <div className="flex flex-col">
+                    <p className="text-secondary font-medium mb-2">Sobre mí</p>
 
-                    <p> Me enfoco en el desarrollo web, priorizando soluciones claras, bien estructuradas y fáciles de mantener.
-                        <span className="text-white"> Valoro el código limpio, las buenas prácticas y la mejora continua en cada proyecto.</span>
-                        <br /> Disfruto enfrentar desafíos técnicos que me impulsen a aprender, salir de mi zona de confort y crecer profesionalmente.
-                    </p>
-                </div>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6">Desarrollador enfocado en crear soluciones claras y escalables</h2>
 
-                {/* Soft Skills */}
-                <div className="w-full  flex flex-col  justify-start border-2 border-secondary rounded-xl px-4 py-4 bg-gray-900">
-                    <div className="flex gap-4 items-center mb-4">
-                        <div className="p-2 bg-secondary/10 rounded-lg">
-                            <FaMicrochip size={20} className="text-secondary" />
-                        </div>
-                        <h4 className="font-semibold text-light text-base">Soft Skills</h4>
+                    <div className="text-slate-400 space-y-4 max-w-xl">
+                        <p>Soy{" "}
+                            <span className="text-secondary">
+                                Técnico Universitario en Programación
+                            </span>, egresado de la UTN (FRM).
+                        </p>
+
+                        <p>Me especializo en desarrollo web, priorizando solucionesclaras, bien estructuradas y fáciles de mantener.
+                            <span className="text-white">
+                                {" "}Valoro el código limpio, las buenas prácticas y la mejora continua.
+                            </span>
+                        </p>
+
+                        <p>Disfruto enfrentar desafíos técnicos que me impulsen a aprender,salir de mi zona de confort y crecer profesionalmente.</p>
                     </div>
-                    <div className="flex gap-3 flex-wrap justify-center md:justify-start">
-                        {softSkills.map((e) => (
-                            <div key={e} className="text-[10px] py-1 px-3 rounded-lg border border-slate-700 bg-gray-900 text-light" >
-                                {e}
+
+                    {/* Soft Skills */}
+                    <div className="mt-8 border border-secondary rounded-xl px-5 py-5 bg-gray-900">
+                        <div className="flex gap-3 items-center mb-4">
+                            <div className="p-2 bg-secondary/10 rounded-lg">
+                                <FaMicrochip size={20} className="text-secondary" />
                             </div>
-                        ))}
+                            <h4 className="font-semibold text-light">Soft Skills</h4>
+                        </div>
+
+                        <div className="flex gap-3 flex-wrap">
+                            {softSkills.map((e) => (
+                                <span key={e} className="text-xs py-1 px-3 rounded-lg border border-slate-700 bg-gray-900 text-light" >
+                                    {e}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section className=" w-full grid grid-cols-1 md:grid-cols-2 gap-5 px-5 py-4">
-                <CardTechnologies icon={<FaCode className="text-secondary" />} title="Lenguajes" technologies={["HTML & CSS", "Javascript", "Typescript"]} />
-                <CardTechnologies icon={<FaBorderAll color="skyblue" />} title="Frameworks & Libs" technologies={["NextJS", "React Vite", "Tailwind", "Boostrap"]} />
-                <CardTechnologies icon={<FaDatabase color="violet" />} title="Backend & DB" technologies={["MySQL"]} />
-                <CardTechnologies icon={<FaTerminal color="orange" />} title="Herramientas & Otros" technologies={["Git & Github", "Figma", "Postman", "Vercel"]} />
-            </section>
-        </div>
 
-    )
+                {/* Columna derecha */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                    <CardTechnologies
+                        icon={<FaCode className="text-secondary" />}
+                        title="Lenguajes"
+                        technologies={["HTML & CSS", "JavaScript", "TypeScript"]}
+                    />
+
+                    <CardTechnologies
+                        icon={<FaBorderAll className="text-sky-400" />}
+                        title="Frameworks & Libs"
+                        technologies={["Next.js", "React", "Tailwind", "Bootstrap"]}
+                    />
+
+                    <CardTechnologies
+                        icon={<FaDatabase className="text-violet-400" />}
+                        title="Backend & DB"
+                        technologies={["Node.js", "MySQL"]}
+                    />
+
+                    <CardTechnologies
+                        icon={<FaTerminal className="text-orange-400" />}
+                        title="Herramientas"
+                        technologies={["Git & GitHub", "Figma", "Postman", "Vercel"]}
+                    />
+
+                </div>
+            </div>
+        </section>
+    );
 }
