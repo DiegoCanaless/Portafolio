@@ -21,8 +21,8 @@ export default function Project() {
                         tecnologias={["React", "TypeScript", "Node.js"]}
                         github="https://github.com/DiegoCanaless/barberiacero"
                         githubBackend="https://github.com/DiegoCanaless/backendbarberiacero"
-                        deployment={false}
-                        deploy=""
+                        deployment={true}
+                        deploy="https://barberiacero.vercel.app/"
                     />
                     <CardProject
                         imagen="/rjc.webp"
