@@ -10,7 +10,7 @@ export default function Project() {
 
                     <h2 className="text-2xl md:text-3xl font-bold">Proyectos destacados</h2>
 
-                    <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm md:text-base">Algunos de los proyectos en los que trabajé, enfocados en resolverproblemas reales con soluciones modernas y escalables.</p>
+                    <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm md:text-base">Algunos de los proyectos en los que trabajé, enfocados en resolver problemas reales con soluciones modernas y escalables.</p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

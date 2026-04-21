@@ -9,7 +9,7 @@ export default function Hero() {
                 <span className="text-secondary">Diego Canales</span>
             </h1>
 
-            <p className="mt-4 text-lg md:text-xl text-gray-300">Programador Frontend · Mendoza, Argentina</p>
+            <p className="mt-4 text-lg md:text-xl text-gray-300">Programador FullStack · Mendoza, Argentina</p>
 
             <p className="mt-4 max-w-2xl text-sm md:text-base text-gray-400">Me apasiona crear interfaces limpias, funcionales y bien pensadas,enfocadas en la experiencia del usuario y la escalabilidad.</p>
 
