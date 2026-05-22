@@ -15,6 +15,16 @@ export default function Project() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <CardProject
+                        imagen="/DentalCare.webp"
+                        titulo="Dental Care"
+                        descripcion="Sistema de gestión dental: turnos, pacientes y dentistas"
+                        tecnologias={["OpenCode","NextJS", "TypeScript", "PostgreSQL"]}
+                        github="https://github.com/DiegoCanaless/DentalCareFront"
+                        githubBackend="https://github.com/DiegoCanaless/DentalCareBack"
+                        deployment={true}
+                        deploy="https://dental-care-front.vercel.app/"
+                    />
+                    <CardProject
                         imagen="/lacerobarber.webp"
                         titulo="LaCero Barber"
                         descripcion="Sistema completo para gestión de barberías: turnos, empleados y organización del negocio."
