@@ -1,11 +1,15 @@
+import dynamic from "next/dynamic";
 import Footer from "@/components/layouts/Footer";
 import Navbar from "@/components/layouts/Navbar";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
-import Form from "@/components/sections/Form";
 import Hero from "@/components/sections/Hero";
 import Project from "@/components/sections/Project";
 import { FaWhatsapp } from "react-icons/fa6";
+
+const Form = dynamic(() => import("@/components/sections/Form"), {
+    loading: () => <div className="min-h-screen" />,
+});
 
 
 export default function Home() {
