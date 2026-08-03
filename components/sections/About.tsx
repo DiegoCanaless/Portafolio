@@ -1,22 +1,23 @@
 import { FaCode, FaDatabase, FaTerminal, FaMicrochip, FaBorderAll } from "react-icons/fa6";
 import CardTechnologies from "../ui/CardTechnologies";
+import Reveal from "../ui/Reveal";
 
 export default function About() {
     const softSkills = [
         "Trabajo en Equipo",
         "Autodidacta",
-        "Resolución de problemas",
-        "Pensamiento crítico",
+        "Comunicación clara",
+        "Curiosidad técnica",
     ];
 
     return (
         <section id="About" className="min-h-screen flex items-center justify-center px-4" >
             <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-12">
 
-                <div className="flex flex-col">
+                <Reveal direction="right" className="flex flex-col">
                     <p className="text-secondary font-medium mb-2">Sobre mí</p>
 
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6">Desarrollador enfocado en crear soluciones claras y escalables</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6">Mi camino hasta acá</h2>
 
                     <div className="text-slate-400 space-y-4 max-w-xl">
                         <p>Soy{" "}
@@ -25,13 +26,7 @@ export default function About() {
                             </span>, egresado de la UTN (FRM).
                         </p>
 
-                        <p>Me especializo en desarrollo web, priorizando solucionesclaras, bien estructuradas y fáciles de mantener.
-                            <span className="text-white">
-                                {" "}Valoro el código limpio, las buenas prácticas y la mejora continua.
-                            </span>
-                        </p>
-
-                        <p>Disfruto enfrentar desafíos técnicos que me impulsen a aprender,salir de mi zona de confort y crecer profesionalmente.</p>
+                        <p>Trabajo con el stack moderno de web: Next.js, React, TypeScript y Node.js, y llevo los proyectos a producción con tests (Playwright) y despliegue en Vercel.</p>
                     </div>
 
                     {/* Soft Skills */}
@@ -51,34 +46,42 @@ export default function About() {
                             ))}
                         </div>
                     </div>
-                </div>
+                </Reveal>
 
                 {/* Columna derecha */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                    <CardTechnologies
-                        icon={<FaCode className="text-secondary" />}
-                        title="Lenguajes"
-                        technologies={["HTML & CSS", "JavaScript", "TypeScript"]}
-                    />
+                    <Reveal delay={0} className="h-full">
+                        <CardTechnologies
+                            icon={<FaCode className="text-secondary" />}
+                            title="Lenguajes"
+                            technologies={["HTML & CSS", "JavaScript", "TypeScript"]}
+                        />
+                    </Reveal>
 
-                    <CardTechnologies
-                        icon={<FaBorderAll className="text-sky-400" />}
-                        title="Frameworks & Libs"
-                        technologies={["Next.js", "React", "Tailwind", "Bootstrap"]}
-                    />
+                    <Reveal delay={0.1} className="h-full">
+                        <CardTechnologies
+                            icon={<FaBorderAll className="text-sky-400" />}
+                            title="Frameworks & Libs"
+                            technologies={["Next.js", "React", "Tailwind"]}
+                        />
+                    </Reveal>
 
-                    <CardTechnologies
-                        icon={<FaDatabase className="text-violet-400" />}
-                        title="Backend & DB"
-                        technologies={["Node.js", "MySQL"]}
-                    />
+                    <Reveal delay={0.2} className="h-full">
+                        <CardTechnologies
+                            icon={<FaDatabase className="text-violet-400" />}
+                            title="Backend & DB"
+                            technologies={["Node.js", "MySQL"]}
+                        />
+                    </Reveal>
 
-                    <CardTechnologies
-                        icon={<FaTerminal className="text-orange-400" />}
-                        title="Herramientas"
-                        technologies={["Git & GitHub", "Figma", "Postman", "Vercel"]}
-                    />
+                    <Reveal delay={0.3} className="h-full">
+                        <CardTechnologies
+                            icon={<FaTerminal className="text-orange-400" />}
+                            title="Herramientas"
+                            technologies={["Git & GitHub", "Figma", "Postman", "Vercel", "OpenCode", "Playwright"]}
+                        />
+                    </Reveal>
 
                 </div>
             </div>

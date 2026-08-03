@@ -1,6 +1,7 @@
 import Footer from "@/components/layouts/Footer";
 import Navbar from "@/components/layouts/Navbar";
 import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
 import Form from "@/components/sections/Form";
 import Hero from "@/components/sections/Hero";
 import Project from "@/components/sections/Project";
@@ -10,7 +11,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 export default function Home() {
   return (
     <>
-      <a href="https://wa.link/5uctx1" aria-label="Ir al whattsapp de RJC para consultas" rel="noopener noreferrer" target="_blank" className="fixed bottom-8 right-8 bg-[#25D366] p-2 rounded-full z-40 hover:cursor-pointer duration-150 hover:scale-110">
+      <a href="https://wa.link/5uctx1" aria-label="Ir al whattsapp de Diego Canales" rel="noopener noreferrer" target="_blank" className="fixed bottom-8 right-8 bg-[#25D366] p-2 rounded-full z-40 hover:cursor-pointer duration-150 hover:scale-110">
         <FaWhatsapp size={38} aria-hidden="true" color="white" />
       </a>
       <Navbar />
@@ -18,6 +19,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto w-full">
           <Hero />
           <About />
+          <Experience />
           <Project />
           <Form />
         </div>

@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react";
-import { FaHouse, FaEnvelope, FaUser, FaBriefcase, FaBars, FaXmark, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { motion } from "motion/react";
+import { FaHouse, FaEnvelope, FaUser, FaBriefcase, FaFolderOpen, FaBars, FaXmark, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
 export default function Navbar() {
 
@@ -9,8 +10,9 @@ export default function Navbar() {
 
     const enlaces = [
         { icon: <FaHouse size={22} />, label: "Inicio", href: "/#Hero" },
-        { icon: <FaBriefcase size={22} />, label: "Proyectos", href: "/#Project" },
         { icon: <FaUser size={22} />, label: "Sobre Mí", href: "/#About" },
+        { icon: <FaBriefcase size={22} />, label: "Experiencia", href: "/#Experience" },
+        { icon: <FaFolderOpen size={22} />, label: "Proyectos", href: "/#Project" },
         { icon: <FaEnvelope size={22} />, label: "Contacto", href: "/#Contact" },
     ]
 
@@ -20,7 +22,11 @@ export default function Navbar() {
     ]
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+        >
             <nav onClick={() => { setNavbarOpen(!navbarOpen) }} className={`z-20 transition-colors cursor-pointer w-10 h-10 fixed rounded-xl top-5 right-5  flex justify-center items-center   ${navbarOpen ? "bg-secondary" : "border-gray-700 border bg-opaque"} lg:hidden`}>
                 {navbarOpen ? (
                     <FaXmark className={`transition-colors z-20`} size={20} />
@@ -58,6 +64,6 @@ export default function Navbar() {
                 </div>
             ) : null}
 
-        </>
+        </motion.div>
     )
 }

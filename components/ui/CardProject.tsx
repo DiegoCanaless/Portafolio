@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { FaServer } from "react-icons/fa6";
 
@@ -20,12 +21,20 @@ export default function CardProject({
     github,
     githubBackend,
     deploy,
-    deployment
+    deployment,
 }: CardProjectProp) {
     return (
-        <div className="group flex flex-col rounded-xl bg-gray-900 border border-slate-700 overflow-hidden transition-all hover:border-secondary hover:scale-[1.02]">
+        <div className="group flex flex-col rounded-xl bg-gray-900 border border-slate-700 overflow-hidden h-full transition-all hover:border-secondary hover:scale-[1.02]">
             <div className="relative w-full">
-                <img src={imagen} alt={titulo} className="w-full h-48 object-cover" />
+                <div className="relative w-full h-48">
+                    <Image
+                        src={imagen}
+                        alt={titulo}
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover"
+                    />
+                </div>
 
                 <div className="absolute inset-0 bg-black/70 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a href={github} target="_blank" rel="noopener noreferrer">

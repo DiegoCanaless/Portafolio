@@ -9,8 +9,26 @@ body {
 }
 
 
+/* Fondo oscuro del tema (#020617 = color `primary`) en el documento base.
+   Evita que cualquier espacio residual entre el contenido y el borde del
+   documento se pinte de blanco (el navegador usa blanco por defecto),
+   lo que causaba una "línea blanca" bajo la barra verde del footer. */
 html {
+  background-color: #020617;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #020617;
+}
+
+
+/* Evita scroll horizontal causado por offsets x de las animaciones (Reveal).
+   `clip` (a diferencia de `hidden`) no crea un nuevo scroll container y
+   no rompe elementos position: fixed/sticky. */
+html,
+body {
+  overflow-x: clip;
 }
 
 
