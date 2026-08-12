@@ -11,6 +11,8 @@ interface CardProjectProp {
     githubBackend?: string;
     deploy?: string;
     deployment?: boolean;
+    cliente?: boolean;
+    badge?: string;
 }
 
 export default function CardProject({
@@ -22,6 +24,8 @@ export default function CardProject({
     githubBackend,
     deploy,
     deployment,
+    cliente,
+    badge,
 }: CardProjectProp) {
     return (
         <div className="group flex flex-col rounded-xl bg-gray-900 border border-slate-700 overflow-hidden h-full transition-all hover:border-secondary hover:scale-[1.02]">
@@ -35,6 +39,18 @@ export default function CardProject({
                         className="object-cover"
                     />
                 </div>
+
+                {cliente && (
+                    <span className="absolute top-3 left-3 z-10 text-xs font-medium px-3 py-1 rounded-full bg-secondary text-primary">
+                        Cliente real
+                    </span>
+                )}
+
+                {badge && (
+                    <span className="absolute top-3 right-3 z-10 text-xs font-medium px-3 py-1 rounded-full bg-amber-400 text-primary">
+                        {badge}
+                    </span>
+                )}
 
                 <div className="absolute inset-0 bg-black/70 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a href={github} target="_blank" rel="noopener noreferrer">

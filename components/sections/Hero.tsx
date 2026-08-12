@@ -39,7 +39,7 @@ export default function Hero() {
                 <span className="text-secondary">Diego Canales</span>
             </motion.h1>
 
-            <motion.p variants={item} className="mt-4 text-lg md:text-xl text-gray-300">Desarrollador Full Stack · Mendoza, Argentina</motion.p>
+            <motion.p variants={item} className="mt-4 text-lg md:text-xl text-gray-300">Desarrollador Fullstack con enfoque a Frontend · Mendoza, Argentina</motion.p>
 
             <motion.p variants={item} className="mt-4 max-w-2xl text-sm md:text-base text-gray-400">Técnico en Programación (UTN). Construí proyectos en producción, de landings a marketplaces, y aprendo rápido cualquier tecnología que el equipo necesite.</motion.p>
 

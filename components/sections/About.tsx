@@ -5,7 +5,7 @@ import Reveal from "../ui/Reveal";
 export default function About() {
     const softSkills = [
         "Trabajo en Equipo",
-        "Autodidacta",
+        "Aprendizaje rápido",
         "Comunicación clara",
         "Curiosidad técnica",
     ];
@@ -71,7 +71,7 @@ export default function About() {
                         <CardTechnologies
                             icon={<FaDatabase className="text-violet-400" />}
                             title="Backend & DB"
-                            technologies={["Node.js", "MySQL"]}
+                            technologies={["Node.js", "MySQL", "Prisma", "PostgreSQL"]}
                         />
                     </Reveal>
 

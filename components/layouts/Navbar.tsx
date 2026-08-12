@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import { FaHouse, FaEnvelope, FaUser, FaBriefcase, FaFolderOpen, FaBars, FaXmark, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaHouse, FaEnvelope, FaUser, FaFolderOpen, FaBars, FaXmark, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
 export default function Navbar() {
 
@@ -11,7 +11,6 @@ export default function Navbar() {
     const enlaces = [
         { icon: <FaHouse size={22} />, label: "Inicio", href: "/#Hero" },
         { icon: <FaUser size={22} />, label: "Sobre Mí", href: "/#About" },
-        { icon: <FaBriefcase size={22} />, label: "Experiencia", href: "/#Experience" },
         { icon: <FaFolderOpen size={22} />, label: "Proyectos", href: "/#Project" },
         { icon: <FaEnvelope size={22} />, label: "Contacto", href: "/#Contact" },
     ]
