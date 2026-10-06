@@ -14,7 +14,7 @@ export default function Footer(){
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
                 >
-                    <h5 className="text-center py-4 text-sm text-slate-400">© 2026 Diego Canales — Hecho a mano con Next.js y TypeScript.</h5>
+                    <h5 className="text-center py-4 text-sm text-slate-400">© 2026 Diego Canales. Hecho a mano con Next.js y TypeScript.</h5>
                 </motion.div>
                 <div className="w-full h-5 bg-secondary"></div>
             </footer>

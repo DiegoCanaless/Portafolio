@@ -12,8 +12,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 
 export const metadata: Metadata = {
-  title: "Diego Canales — Desarrollador Full Stack",
-  description: "Explora los proyectos de Diego Canales: desarrollo frontend y backend, optimización SEO y soluciones digitales innovadoras.",
+  title: "Diego Canales · Desarrollador Fullstack",
+  description: "Diego Canales, desarrollador fullstack con enfoque a frontend en Mendoza, Argentina. Proyectos en producción con Next.js, React y TypeScript.",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {

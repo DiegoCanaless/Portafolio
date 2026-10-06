@@ -26,7 +26,16 @@ export default function About() {
                             </span>, egresado de la UTN (FRM).
                         </p>
 
-                        <p>Trabajo con el stack moderno de web: Next.js, React, TypeScript y Node.js, y llevo los proyectos a producción con tests (Playwright) y despliegue en Vercel.</p>
+                        <p>Empecé con un curso básico de desarrollo web y me interesó tanto cómo funcionaba todo que pasé a la tecnicatura, donde aprobé todas las materias.</p>
+
+                        <p>Fundé{" "}
+                            <a href="https://equidaty.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                                Equidaty
+                            </a>, una agencia web para pymes, y desde ahí arrancó EquidaTy Shop, tiendas online que nacen de una planilla.</p>
+
+                        <p>Trabajo con Next.js, React, TypeScript y Node.js. Llevo los proyectos a producción con tests en Playwright y despliegue en Vercel.</p>
+
+                        <p>Ahora busco un equipo donde demostrar lo que puedo aportar y seguir formándome.</p>
                     </div>
 
                     {/* Soft Skills */}
@@ -79,7 +88,7 @@ export default function About() {
                         <CardTechnologies
                             icon={<FaTerminal className="text-orange-400" />}
                             title="Herramientas"
-                            technologies={["Git & GitHub", "Figma", "Postman", "Vercel", "OpenCode", "Playwright"]}
+                            technologies={["Git & GitHub", "GitHub Actions", "Figma", "Postman", "Vercel", "OpenCode", "Playwright", "Vitest"]}
                         />
                     </Reveal>
 

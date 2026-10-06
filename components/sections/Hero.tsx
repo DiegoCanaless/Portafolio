@@ -41,7 +41,7 @@ export default function Hero() {
 
             <motion.p variants={item} className="mt-4 text-lg md:text-xl text-gray-300">Desarrollador Fullstack con enfoque a Frontend · Mendoza, Argentina</motion.p>
 
-            <motion.p variants={item} className="mt-4 max-w-2xl text-sm md:text-base text-gray-400">Técnico en Programación (UTN). Construí proyectos en producción, de landings a marketplaces, y aprendo rápido cualquier tecnología que el equipo necesite.</motion.p>
+            <motion.p variants={item} className="mt-4 max-w-2xl text-sm md:text-base text-gray-400">Técnico en Programación (UTN). Diseño, desarrollo y despliego productos web de punta a punta.</motion.p>
 
             <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link href="/#Project" className="px-6 py-3 rounded-xl bg-secondary flex items-center justify-center gap-2 hover:scale-105 transition-transform" > <FaBriefcase /> Ver proyectos </Link>

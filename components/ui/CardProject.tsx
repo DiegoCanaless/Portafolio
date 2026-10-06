@@ -7,7 +7,7 @@ interface CardProjectProp {
     titulo: string;
     descripcion: string;
     tecnologias: string[];
-    github: string;
+    github?: string;
     githubBackend?: string;
     deploy?: string;
     deployment?: boolean;
@@ -53,9 +53,11 @@ export default function CardProject({
                 )}
 
                 <div className="absolute inset-0 bg-black/70 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href={github} target="_blank" rel="noopener noreferrer">
-                        <FaGithub className="text-light hover:text-secondary text-2xl" />
-                    </a>
+                    {github && (
+                        <a href={github} target="_blank" rel="noopener noreferrer">
+                            <FaGithub className="text-light hover:text-secondary text-2xl" />
+                        </a>
+                    )}
 
                     {githubBackend && (
                         <a href={githubBackend} target="_blank" rel="noopener noreferrer">

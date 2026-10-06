@@ -17,17 +17,28 @@ export default function Project() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <Reveal delay={0} className="h-full">
                         <CardProject
+                            imagen="/equidatyshop.webp"
+                            titulo="EquidaTy Shop"
+                            descripcion="Tienda multi-tenant que nace de una planilla: el cliente carga su catálogo en Google Sheets y la venta se cierra por WhatsApp."
+                            tecnologias={["Next.js", "React", "TypeScript", "Tailwind"]}
+                            deployment={true}
+                            deploy="https://equida-ty-shop.vercel.app/"
+                            badge="En desarrollo"
+                        />
+                    </Reveal>
+                    <Reveal delay={0.1} className="h-full">
+                        <CardProject
                             imagen="/ZarpV2.webp"
                             titulo="Zarp V2"
-                            descripcion="Remake del marketplace de alojamientos temporales con un stack moderno."
-                            tecnologias={["Next.js", "Node.js", "TypeScript", "Tailwind", "Prisma", "PostgreSQL", "Socket.io"]}
+                            descripcion="Remake del marketplace donde esta vez desarrollo también el backend y sumo nuevas funcionalidades."
+                            tecnologias={["Next.js", "Node.js", "TypeScript", "Tailwind", "Prisma", "PostgreSQL", "Socket.io", "Stripe", "Redis"]}
                             github="https://github.com/DiegoCanaless/ZarpV2"
                             deployment={true}
                             deploy="https://zarp-v2-web.vercel.app/"
                             badge="En desarrollo"
                         />
                     </Reveal>
-                    <Reveal delay={0.1} className="h-full">
+                    <Reveal delay={0.2} className="h-full">
                         <CardProject
                             imagen="/rjc.webp"
                             titulo="RJC Transportes"
@@ -39,7 +50,7 @@ export default function Project() {
                             cliente={true}
                         />
                     </Reveal>
-                    <Reveal delay={0.2} className="h-full">
+                    <Reveal delay={0.3} className="h-full">
                         <CardProject
                             imagen="/DentalCare.webp"
                             titulo="Dental Care"
@@ -51,7 +62,7 @@ export default function Project() {
                             deploy="https://dental-care-front.vercel.app/"
                         />
                     </Reveal>
-                    <Reveal delay={0.3} className="h-full">
+                    <Reveal delay={0.4} className="h-full">
                         <CardProject
                             imagen="/lacerobarber.webp"
                             titulo="LaCero Barber"
@@ -63,7 +74,7 @@ export default function Project() {
                             deploy="https://barberiacero.vercel.app/"
                         />
                     </Reveal>
-                    <Reveal delay={0.4} className="h-full">
+                    <Reveal delay={0.5} className="h-full">
                         <CardProject
                             imagen="/zarp.webp"
                             titulo="Zarp"
@@ -74,7 +85,7 @@ export default function Project() {
                             deploy="https://zarp-sepia.vercel.app/"
                         />
                     </Reveal>
-                    <Reveal delay={0.5} className="h-full">
+                    <Reveal delay={0.6} className="h-full">
                         <CardProject
                             imagen="/bigbite.webp"
                             titulo="Big Bite"

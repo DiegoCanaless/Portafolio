@@ -80,7 +80,7 @@ export default function ContactForm() {
 
                             <div className="flex items-center gap-3">
                                 <FaLocationDot className="text-secondary" />
-                                <span>Mendoza, Argentina — disponible para trabajo remoto</span>
+                                <span>Mendoza, Argentina · disponible para trabajo remoto</span>
                             </div>
 
                             <div className="flex items-center gap-3">
