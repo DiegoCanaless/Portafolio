@@ -8,6 +8,8 @@ export default function About() {
         "Aprendizaje rápido",
         "Comunicación clara",
         "Curiosidad técnica",
+        "Venta consultiva",
+        "Trato con clientes"
     ];
 
     return (
