@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import Footer from "@/components/layouts/Footer";
 import Navbar from "@/components/layouts/Navbar";
 import About from "@/components/sections/About";
+import Education from "@/components/sections/Education";
 import Hero from "@/components/sections/Hero";
 import Project from "@/components/sections/Project";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -22,6 +23,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto w-full">
           <Hero />
           <About />
+          <Education />
           <Project />
           <Form />
         </div>

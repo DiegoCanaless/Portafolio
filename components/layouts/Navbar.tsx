@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import { FaHouse, FaEnvelope, FaUser, FaFolderOpen, FaBars, FaXmark, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaHouse, FaEnvelope, FaUser, FaFolderOpen, FaGraduationCap, FaBars, FaXmark, FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa6";
 
 export default function Navbar() {
 
@@ -11,6 +11,7 @@ export default function Navbar() {
     const enlaces = [
         { icon: <FaHouse size={22} />, label: "Inicio", href: "/#Hero" },
         { icon: <FaUser size={22} />, label: "Sobre Mí", href: "/#About" },
+        { icon: <FaGraduationCap size={22} />, label: "Formación", href: "/#Education" },
         { icon: <FaFolderOpen size={22} />, label: "Proyectos", href: "/#Project" },
         { icon: <FaEnvelope size={22} />, label: "Contacto", href: "/#Contact" },
     ]
@@ -41,6 +42,9 @@ export default function Navbar() {
                 <hr className="w-px h-4 bg-white border-0" />
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/DiegoCanaless"><FaGithub className="cursor-pointer hover:text-secondary transition-colors" size={22} /></a>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/diego-canales-236332254/"><FaLinkedinIn className="cursor-pointer hover:text-secondary transition-colors" size={22} /></a>
+                <a href="/Diego-Canales-CV.pdf" download className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-secondary text-secondary hover:bg-secondary/10 transition-colors whitespace-nowrap">
+                    <FaDownload size={15} /> CV
+                </a>
             </nav>
 
             {navbarOpen ? (
@@ -60,6 +64,14 @@ export default function Navbar() {
                             )
                         })}
                     </div>
+                    <a
+                        href="/Diego-Canales-CV.pdf"
+                        download
+                        onClick={() => setNavbarOpen(false)}
+                        className="flex items-center gap-3 px-6 py-3 rounded-xl border border-secondary text-secondary hover:bg-secondary/10 transition-colors mt-2"
+                    >
+                        <FaDownload /> Descargar CV
+                    </a>
                 </div>
             ) : null}
 

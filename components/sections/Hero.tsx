@@ -1,7 +1,7 @@
 "use client"
 import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
-import { FaEnvelope, FaBriefcase } from "react-icons/fa6";
+import { FaEnvelope, FaBriefcase, FaDownload } from "react-icons/fa6";
 
 const containerVariants = {
     hidden: {},
@@ -46,6 +46,7 @@ export default function Hero() {
             <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link href="/#Project" className="px-6 py-3 rounded-xl bg-secondary flex items-center justify-center gap-2 hover:scale-105 transition-transform" > <FaBriefcase /> Ver proyectos </Link>
                 <Link href="/#Contact" className="px-6 py-3 rounded-xl border border-secondary flex items-center justify-center gap-2 hover:bg-secondary/10 transition-colors" > <FaEnvelope /> Hablemos </Link>
+                <a href="/Diego-Canales-CV.pdf" download className="px-6 py-3 rounded-xl border border-slate-700 flex items-center justify-center gap-2 hover:border-secondary hover:text-secondary transition-colors" > <FaDownload /> Descargar CV </a>
             </motion.div>
         </motion.section>
     );
